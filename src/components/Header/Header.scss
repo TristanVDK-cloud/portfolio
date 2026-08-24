@@ -1,0 +1,50 @@
+@use "../../styles/variables" as *;
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba($bg-primary, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba($color-text, 0.1);
+
+    &__container {
+        max-width: 1240px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    &__logo {
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: white;
+        text-decoration: none;
+
+        span {
+            color: $color-primary;
+        }
+    }
+
+    &__nav {
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+
+            a {
+                color: $color-text-muted;
+                text-decoration: none;
+                font-weight: 500;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
