@@ -1,0 +1,33 @@
+@use "../variables" as *;
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 15px;
+
+    &--primary {
+        background-color: $color-primary;
+        color: white;
+        border: 1px solid $color-primary;
+
+        &:hover {
+            background-color: transparent;
+            color: $color-primary;
+        }
+    }
+
+    &--outline {
+        background-color: transparent;
+        color: $color-primary;
+        border: 1px solid $color-text;
+
+        &:hover {
+            border-color: $color-primary;
+            color: $color-primary;
+        }
+    }
+}
