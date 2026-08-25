@@ -11,7 +11,7 @@ function Hero() {
                     </h1>
                     <h2 className="hero__job">Développeur Front-End / Intégrateur Web</h2>
                     <p className="hero__description">
-                        Passioné par la création d'interfaces modernes et performantes.
+                        Passionné par la création d'interfaces modernes et performantes.
                         Spécialisé dans l'écosystème React, j'accompagne les projets de la conception à la mise en ligne.
                     </p>
                     <div className='hero__actions'>
