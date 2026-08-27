@@ -19,3 +19,15 @@
         animation: fadeInUp 0.8s ease-out 0.2s both;
     }
 }
+
+@keyframes skillReveal {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

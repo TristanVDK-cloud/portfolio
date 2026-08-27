@@ -1,6 +1,6 @@
 [
     {
-        "id": "kasa",
+        "id": "1",
         "title": "Kasa",
         "description": "Application de location immobilière avec React et React Router.",
         "stack": ["React", "React Router", "Sass"],
@@ -10,7 +10,7 @@
         "mission": "Moderniser l'interface et gérer les routes dynamiques."
     },
     {
-        "id": "argent-bank",
+        "id": "2",
         "title": "Argent Bank",
         "description": "Application bancaire avec React, système d'authentification avec gestion d'état global à l'aide de Redux.",
         "stack": ["React", "Redux Toolkit", "Sass", "API REST"],
@@ -20,7 +20,7 @@
         "mission": "Implémenter Redux pour la persistance des données utilisateur."
     },
     {
-        "id": "ohmyfood",
+        "id": "3",
         "title": "Ohmyfood",
         "description": "Application de commande de repas avec animations CSS.",
         "stack": ["HTML", "CSS", "Sass"],
@@ -30,7 +30,7 @@
         "mission": "Créer une interface utilisateur avec des animations CSS."
     },
     {
-        "id": "Booki",
+        "id": "4",
         "title": "Booki",
         "description": "Application de réservation d'hôtels avec HTML et CSS.",
         "stack": ["HTML", "CSS"],
@@ -38,5 +38,15 @@
         "cover": "/img/booki-preview.webp",
         "link": "https://github.com/TristanVDK-cloud/Booki",
         "mission": "Développer une interface de réservation d'hôtels."
+    },
+    {
+        "id":"5",
+        "title": "Sophie Bluel",
+        "description": "Portfolio d'architecte d'intérieur avec HTML, CSS et JavaScript.",
+        "stack": ["HTML", "CSS", "JavaScript"],
+        "category": "Front-end",
+        "cover": "/img/sophie-bluel-preview.webp",
+        "link": "https://github.com/TristanVDK-cloud/Sophie-Bluel",
+        "mission": "Créer un portfolio interactif pour présenter les projets d'architecture d'intérieur."
     }
 ]

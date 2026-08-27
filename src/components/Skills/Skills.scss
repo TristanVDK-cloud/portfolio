@@ -1,0 +1,85 @@
+@use "../../styles/variables" as *;
+@use "../../styles/utils/animations" as *;
+
+.skills {
+    padding: 100px 20px;
+
+    &__container {
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 60px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease-out;
+
+        &.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 30px;
+    }
+
+    &__item {
+        opacity: 0;
+
+        &.visible {
+            animation: skillReveal 0.6s ease-out both;
+        }
+    }
+
+    &__card {
+        background-color: $bg-secondary;
+        padding: 40px 20px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        cursor: pointer;
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+            background-color 0.4s ease,
+            box-shadow 0.4s ease,
+            border-color 0.4s ease;
+
+        img {
+            width: 50px;
+            height: 50px;
+            filter: grayscale(100%) brightness(2);
+            opacity: 0.6;
+            transition: all 0.4s ease;
+        }
+
+        span {
+            font-weight: 500;
+            color: $color-text-muted;
+            transition: color 0.4s ease;
+        }
+
+        &:hover {
+            background-color: rgba($color-primary, 0.1);
+            border-color: $color-primary;
+            transform: translateY(-10px) scale(1.1);
+            box-shadow: 0 10px 30px rgba($color-primary, 0.2);
+
+            img {
+                filter: grayscale(0%) brightness(1);
+                opacity: 1;
+                transform: rotate(8deg) scale(1.1);
+            }
+
+            span {
+                color: white;
+            }
+        }
+    }
+}
