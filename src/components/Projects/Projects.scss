@@ -1,0 +1,139 @@
+@use "../../styles/utils/animations" as *;
+@use "../../styles/variables" as *;
+
+.projects {
+    padding: 100px 20px;
+
+    &__container {
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+
+    &__filters {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 50px;
+
+        .filter-btn {
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: 1px solid $color-primary;
+            background: transparent;
+            color: $color-text;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: rgba($color-primary, 0.1);
+            }
+
+            &.active {
+                background-color: $color-primary;
+                color: white;
+                box-shadow: 0 0 15px rgba($color-primary, 0.5);
+            }
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+    }
+}
+
+.project-card {
+    opacity: 0;
+    animation: fadeInScale 0.5s ease-out both;
+
+    &__inner {
+        background-color: $bg-secondary;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.4s ease;
+
+
+        &:hover {
+            transform: translateY(-15px);
+            border-color: $color-primary;
+
+            .project-card__overlay {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__image-wrapper {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            transition: transform 0.5s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($bg-primary, 0.7);
+        backdrop-filter: blur(4px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+
+        span {
+            color: white;
+            font-size: 1rem;
+            border: 2px solid white;
+            padding: 8px 16px;
+            border-radius: 30px;
+            transform: translateY(10px);
+            transition: transform 0.3s ease;
+        }
+    }
+
+    &__inner:hover &__overlay span {
+        transform: translateY(0);
+    }
+
+    &__info {
+        padding: 25px;
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: $color-text;
+        }
+
+        p {
+            color: $color-text-muted;
+            font-size: 1rem;
+            line-height: 1.5;
+            overflow: hidden;
+        }
+    }
+}
