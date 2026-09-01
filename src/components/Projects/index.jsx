@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import projectsData from '../../data/projects.json';
 import './Projects.scss';
+import Modal from '../Modal';
 
 function Projects() {
     const [activeFilter, setActiveFilter] = useState('Tous');
@@ -45,10 +46,12 @@ function Projects() {
                         </div>
                     ))}
                 </div>
-                {/* <Modal
-                    project={selectedProject}
-                    onClose={() => setSelectedProject(null)}
-                /> */}
+                {selectedProject && (
+                    <Modal
+                        project={selectedProject}
+                        onClose={() => setSelectedProject(null)}
+                    />
+                )}
             </div>
         </section>
     );
