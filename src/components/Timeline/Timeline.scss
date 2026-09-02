@@ -1,0 +1,116 @@
+@use "../../styles/variables" as *;
+
+.timeline {
+    padding: 100px 20px;
+
+    &__container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    &__line-wrapper {
+        position: relative;
+        margin: 40px 0;
+    }
+
+    &__main-line {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(to bottom, $color-primary, transparent);
+
+        @media screen and (min-width: 768px) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 60px;
+        width: 100%;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-out;
+
+        &.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 50%;
+
+            &:nth-child(even) {
+                margin-left: 50%;
+                padding-left: 40px;
+
+                .timeline__dot {
+                    left: -9px;
+                }
+            }
+
+            &:nth-child(odd) {
+                align-items: flex-end;
+                padding-right: 40px;
+                text-align: right;
+
+                .timeline__dot {
+                    left: auto;
+                    right: -9px;
+                }
+            }
+        }
+    }
+
+    &__dot {
+        position: absolute;
+        top: 0;
+        left: 11px;
+        width: 20px;
+        height: 20px;
+        background-color: $bg-primary;
+        border: 3px solid $color-primary;
+        border-radius: 50%;
+        z-index: 2;
+
+        @media screen and (min-width: 768px) {
+            left: -9px;
+        }
+    }
+
+    &__content {
+        padding: 30px;
+        background-color: $bg-secondary;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+        h3 {
+            color: white;
+            margin: 10px 0 5px;
+        }
+
+        h4 {
+            color: $color-primary;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: $color-text-muted;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+    }
+
+    &__date {
+        color: $color-primary;
+        background-color: rgba($color-primary, 0.1);
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+}
