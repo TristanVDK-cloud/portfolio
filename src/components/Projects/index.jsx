@@ -5,11 +5,12 @@ import Modal from '../Modal';
 
 function Projects() {
     const [activeFilter, setActiveFilter] = useState('Tous');
-    const categories = ['Tous', 'HTML', 'CSS', 'React', 'Sass', 'JavaScript'];
+    const categories = ['Tous', 'HTML5', 'CSS3', 'React', 'Sass', 'JavaScript'];
     const [selectedProject, setSelectedProject] = useState(null);
     const filteredProjects = activeFilter === 'Tous'
         ? projectsData
-        : projectsData.filter(project => project.stack.includes(activeFilter));
+        : projectsData.filter(project => project.technologies.some(tech => tech.name === activeFilter)
+    );
 
     return (
         <section className='projects' id="projects">

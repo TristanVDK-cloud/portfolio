@@ -11,10 +11,18 @@
         max-width: 1240px;
         margin: 0 auto;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        text-align: center;
         width: 100%;
         gap: 50px;
+
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            text-align: left;
+            justify-content: space-between;
+        }
     }
 
     &__text-content {
@@ -24,9 +32,13 @@
         gap: 24px;}
 
     &__name {
-        font-size: 4rem;
+        font-size: 2.5rem;
         line-height: 1.1;
         margin: 0;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 4rem;
+        }
 
         span {
             color: $color-primary;

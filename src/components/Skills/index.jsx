@@ -24,7 +24,7 @@ function Skills() {
     });
 
     return (
-        <section className="skills" ref={ref}>
+        <section className="skills" id="skills" ref={ref}>
             <div className="skills__container">
                 <h2 className={`skills__title ${inView ? 'visible' : ''}`}>Mes Compétences</h2>
 

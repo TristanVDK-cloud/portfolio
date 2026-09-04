@@ -3,50 +3,113 @@
         "id": "1",
         "title": "Kasa",
         "description": "Application de location immobilière avec React et React Router.",
-        "stack": ["React", "Sass"],
+        "technologies": [
+            { "name": "React", "logo": "/src/assets/icons/react.svg" },
+            { "name": "Sass", "logo": "/src/assets/icons/sass.svg" }
+        ],
         "category": "Front-end",
         "cover": "/img/kasa-preview.webp",
         "link": "https://github.com/TristanVDK-cloud/kasa/tree/main",
-        "mission": "Moderniser l'interface et gérer les routes dynamiques."
+        "context": "Projet n°7 de la formation. Kasa est l'un des leaders de la location d'appartements entre particuliers en France.",
+        "objectives": "Passer d'une architecture statique à une application dynamique avec React.",
+        "skills": [
+            "Initialiser une application avec React",
+            "Configurer le routing avec React Router",
+            "Gérer l'état local avec les Hooks",
+            "Créer des composants réutilisables"
+        ],
+        "results": "Une application web fluide, responsive et performante respectant 100% de la maquette Figma.",
+        "improvements": "Mise en place d'un moteur de recherche en temps réel et filtres par prix."
     },
     {
         "id": "2",
         "title": "Argent Bank",
         "description": "Application bancaire avec React, système d'authentification avec gestion d'état global à l'aide de Redux.",
-        "stack": ["React", "Sass"],
+        "technologies": [
+            { "name": "React", "logo": "/src/assets/icons/react.svg" },
+            { "name": "Sass", "logo": "/src/assets/icons/sass.svg" }
+        ],
         "category": "Front-end",
         "cover": "/img/argent-bank-preview.webp",
         "link": "https://github.com/TristanVDK-cloud/ArgentBank-Frontend",
-        "mission": "Implémenter Redux pour la persistance des données utilisateur."
+        "context": "Projet n°8 de la formation. Développement de la partie front-end d'une application bancaire connectée à un serveur API.",
+        "objectives": "Sécuriser l'authentification des utilisateurs et centraliser les données du profil.",
+        "skills": [
+            "Implémentation d'un store global avec Redux Toolkit",
+            "Communication asynchrone avec une API (Login/Profile)",
+            "Persistence du token d'authentification (Storage)",
+            "Modélisation de routes API via Swagger"
+        ],
+        "results": "Un système d'authentification robuste avec un dashboard dynamique reflétant en temps réel les changements du store.",
+        "improvements": "Implémentation complète de la gestion des transactions bancaires."
     },
     {
         "id": "3",
         "title": "Ohmyfood",
-        "description": "Application de commande de repas avec animations CSS.",
-        "stack": ["HTML", "CSS", "Sass"],
+        "description": "Site Mobile-First répertoriant les menus de restaurants gastronomiques.",
+        "technologies": [
+            { "name": "HTML5", "logo": "/src/assets/icons/html5.svg" },
+            { "name": "CSS3", "logo": "/src/assets/icons/css.svg" },
+            { "name": "Sass", "logo": "/src/assets/icons/sass.svg" }
+        ],
         "category": "Front-end",
         "cover": "/img/ohmyfood-preview.webp",
         "link": "https://github.com/TristanVDK-cloud/Ohmyfood",
-        "mission": "Créer une interface utilisateur avec des animations CSS."
+        "context": "Projet n°4 de la formation. Création d'un site Mobile-First pour présenter les menus de restaurants gastronomiques.",
+        "objectives": "Utiliser les animations CSS pour améliorer l'expérience utilisateur et structurer le code avec un préprocesseur.",
+        "skills": [
+            "Méthodologie Mobile-First",
+            "Animations CSS (@keyframes, transitions",
+            "Architecture Sass (Pattern 7-1)",
+            "Utilisation des variables et mixins pour la maintenabilité"
+        ],
+        "results": "Une interface fluide, dotée d'un loading spinner personnalisé et d'effets visuels soignés au survol.",
+        "improvements": "Ajouter un système de filtrage des restaurants par type de cuisine."
+
     },
     {
         "id": "4",
         "title": "Booki",
         "description": "Application de réservation d'hôtels avec HTML et CSS.",
-        "stack": ["HTML", "CSS"],
+        "technologies": [
+            { "name": "HTML5", "logo": "/src/assets/icons/html5.svg" },
+            { "name": "CSS3", "logo": "/src/assets/icons/css.svg" }
+        ],
         "category": "Front-end",
         "cover": "/img/booki-preview.webp",
         "link": "https://github.com/TristanVDK-cloud/Booki",
-        "mission": "Développer une interface de réservation d'hôtels."
+        "context": "Projet n°3 de la formation, marquant le début de l'apprentissage des standards du web.",
+        "objectives": "Réaliser une interface responsive sans utiliser de framework, uniquement en HTML pur et CSS.",
+        "skills": [
+            "Maîtrise de Flexbox pour la mise en page",
+            "Gestion du Responsive Design via les Media Queries",
+            "Respect de la sémantique HTML5",
+            "Conformité aux standards W3C"
+        ],
+        "results": "Un site parfaitement lisible sur tous les supports (Desktop, Tablette, Mobile) avec une structure de code saine.",
+        "improvements": "Ajout d'une barre de recherche fonctionnelle en JavaScript."
     },
     {
         "id":"5",
         "title": "Sophie Bluel",
-        "description": "Portfolio d'architecte d'intérieur avec HTML, CSS et JavaScript.",
-        "stack": ["HTML", "CSS", "JavaScript"],
+        "description": "Création d'une page web dynamique pour le portfolio d'une architecte d'intérieur.",
+        "technologies": [
+            { "name": "HTML5", "logo": "/src/assets/icons/html5.svg" },
+            { "name": "CSS3", "logo": "/src/assets/icons/css.svg" },
+            { "name": "JavaScript", "logo": "/src/assets/icons/javascript.svg" }
+        ],
         "category": "Front-end",
         "cover": "/img/sophie-bluel-preview.webp",
         "link": "https://github.com/TristanVDK-cloud/Sophie-Bluel",
-        "mission": "Créer un portfolio interactif pour présenter les projets d'architecture d'intérieur."
+        "context": "Projet n°6 de la formation. L'enjeu était de rendre un site vitrine dynamique en communiquant avec un serveur.",
+        "objectives": "Manipuler le DOM en temps réel et gérer l'authentification administrateur pour la modification du contenu.",
+        "skills": [
+            "Récupération des données via Fetch",
+            "Manipulation dynamique du DOM",
+            "Création d'une interface d'administration (Modale)",
+            "Gestion de l'envoi de formulaires complexes"
+        ],
+        "results": "Une galerie interactive mise à jour instantanément sans recharger la page, avec un système d'ajout et de suppression de projets sécurisé.",
+        "improvements": "Migration du projet vers React pour une gestion d'état plus robuste."
     }
 ]

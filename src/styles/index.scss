@@ -9,6 +9,9 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 body {
@@ -16,4 +19,10 @@ body {
   background-color: $bg-primary;
   color: $color-text;
   overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+main {
+  padding-top: 80px;
 }
