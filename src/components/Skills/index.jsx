@@ -1,20 +1,13 @@
 import { useInView } from "react-intersection-observer";
 import './Skills.scss';
-import htmlIcon from '../../assets/icons/html5.svg';
-import cssIcon from '../../assets/icons/css.svg';
-import jsIcon from '../../assets/icons/javascript.svg';
-import reactIcon from '../../assets/icons/react.svg';
-import sassIcon from '../../assets/icons/sass.svg';
-import nodejsIcon from '../../assets/icons/nodedotjs.svg';
-
 
 const techSkills = [
-    { name: "HTML5", icon: htmlIcon },
-    { name: 'CSS3', icon: cssIcon },
-    { name: 'JavaScript', icon: jsIcon },
-    { name: 'React', icon: reactIcon },
-    { name: 'Sass', icon: sassIcon },
-    { name: 'Node.js', icon: nodejsIcon }
+    { name: "HTML5", icon: `${import.meta.env.BASE_URL}icons/html5.svg` },
+    { name: 'CSS3', icon: `${import.meta.env.BASE_URL}icons/css3.svg` },
+    { name: 'JavaScript', icon: `${import.meta.env.BASE_URL}icons/javascript.svg` },
+    { name: 'React', icon: `${import.meta.env.BASE_URL}icons/react.svg` },
+    { name: 'Sass', icon: `${import.meta.env.BASE_URL}icons/sass.svg` },
+    { name: 'Node.js', icon: `${import.meta.env.BASE_URL}icons/nodedotjs.svg` }
 ];
 
 function Skills() {

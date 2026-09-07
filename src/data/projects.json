@@ -4,11 +4,11 @@
         "title": "Kasa",
         "description": "Application de location immobilière avec React et React Router.",
         "technologies": [
-            { "name": "React", "logo": "/src/assets/icons/react.svg" },
-            { "name": "Sass", "logo": "/src/assets/icons/sass.svg" }
+            { "name": "React", "logo": "./icons/react.svg" },
+            { "name": "Sass", "logo": "./icons/sass.svg" }
         ],
         "category": "Front-end",
-        "cover": "/img/kasa-preview.webp",
+        "cover": "./img/kasa-preview.webp",
         "link": "https://github.com/TristanVDK-cloud/kasa/tree/main",
         "context": "Projet n°7 de la formation. Kasa est l'un des leaders de la location d'appartements entre particuliers en France.",
         "objectives": "Passer d'une architecture statique à une application dynamique avec React.",
@@ -26,11 +26,11 @@
         "title": "Argent Bank",
         "description": "Application bancaire avec React, système d'authentification avec gestion d'état global à l'aide de Redux.",
         "technologies": [
-            { "name": "React", "logo": "/src/assets/icons/react.svg" },
-            { "name": "Sass", "logo": "/src/assets/icons/sass.svg" }
+            { "name": "React", "logo": "./icons/react.svg" },
+            { "name": "Sass", "logo": "./icons/sass.svg" }
         ],
         "category": "Front-end",
-        "cover": "/img/argent-bank-preview.webp",
+        "cover": "./img/argent-bank-preview.webp",
         "link": "https://github.com/TristanVDK-cloud/ArgentBank-Frontend",
         "context": "Projet n°8 de la formation. Développement de la partie front-end d'une application bancaire connectée à un serveur API.",
         "objectives": "Sécuriser l'authentification des utilisateurs et centraliser les données du profil.",
@@ -48,12 +48,12 @@
         "title": "Ohmyfood",
         "description": "Site Mobile-First répertoriant les menus de restaurants gastronomiques.",
         "technologies": [
-            { "name": "HTML5", "logo": "/src/assets/icons/html5.svg" },
-            { "name": "CSS3", "logo": "/src/assets/icons/css.svg" },
-            { "name": "Sass", "logo": "/src/assets/icons/sass.svg" }
+            { "name": "HTML5", "logo": "./icons/html5.svg" },
+            { "name": "CSS3", "logo": "./icons/css3.svg" },
+            { "name": "Sass", "logo": "./icons/sass.svg" }
         ],
         "category": "Front-end",
-        "cover": "/img/ohmyfood-preview.webp",
+        "cover": "./img/ohmyfood-preview.webp",
         "link": "https://github.com/TristanVDK-cloud/Ohmyfood",
         "context": "Projet n°4 de la formation. Création d'un site Mobile-First pour présenter les menus de restaurants gastronomiques.",
         "objectives": "Utiliser les animations CSS pour améliorer l'expérience utilisateur et structurer le code avec un préprocesseur.",
@@ -72,11 +72,11 @@
         "title": "Booki",
         "description": "Application de réservation d'hôtels avec HTML et CSS.",
         "technologies": [
-            { "name": "HTML5", "logo": "/src/assets/icons/html5.svg" },
-            { "name": "CSS3", "logo": "/src/assets/icons/css.svg" }
+            { "name": "HTML5", "logo": "./icons/html5.svg" },
+            { "name": "CSS3", "logo": "./icons/css3.svg" }
         ],
         "category": "Front-end",
-        "cover": "/img/booki-preview.webp",
+        "cover": "./img/booki-preview.webp",
         "link": "https://github.com/TristanVDK-cloud/Booki",
         "context": "Projet n°3 de la formation, marquant le début de l'apprentissage des standards du web.",
         "objectives": "Réaliser une interface responsive sans utiliser de framework, uniquement en HTML pur et CSS.",
@@ -94,12 +94,12 @@
         "title": "Sophie Bluel",
         "description": "Création d'une page web dynamique pour le portfolio d'une architecte d'intérieur.",
         "technologies": [
-            { "name": "HTML5", "logo": "/src/assets/icons/html5.svg" },
-            { "name": "CSS3", "logo": "/src/assets/icons/css.svg" },
-            { "name": "JavaScript", "logo": "/src/assets/icons/javascript.svg" }
+            { "name": "HTML5", "logo": "./icons/html5.svg" },
+            { "name": "CSS3", "logo": "./icons/css3.svg" },
+            { "name": "JavaScript", "logo": "./icons/javascript.svg" }
         ],
         "category": "Front-end",
-        "cover": "/img/sophie-bluel-preview.webp",
+        "cover": "./img/sophie-bluel-preview.webp",
         "link": "https://github.com/TristanVDK-cloud/Sophie-Bluel",
         "context": "Projet n°6 de la formation. L'enjeu était de rendre un site vitrine dynamique en communiquant avec un serveur.",
         "objectives": "Manipuler le DOM en temps réel et gérer l'authentification administrateur pour la modification du contenu.",
