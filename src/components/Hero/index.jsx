@@ -21,7 +21,7 @@ function Hero() {
                 </div>
                 <div className="hero__avatar">
                     <div className='hero__avatar-circle'>
-                        <img src={monAvatar} alt="Tristan Camps" />
+                        <img src={monAvatar} alt="Portrait de Tristan Camps" />
                     </div>
                 </div>
             </div>
