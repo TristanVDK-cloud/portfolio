@@ -1,0 +1,53 @@
+@use "../../styles/variables" as *;
+
+.footer {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: darken($bg-primary, 2%);
+    border-top: 1px solid rgba($color-text, 0.05);
+    margin-top: 50px;
+
+    &__container {
+        max-width: 1240px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+        font-size: 1.2rem;
+        font-weight: 900;
+        span { color: $color-primary; }
+    }
+
+    &__text {
+        font-size: 0.9rem;
+        color: $color-text-muted;
+        text-align: center;
+    }
+
+    &__link {
+        color: $color-text;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        i {
+            font-size: 1.4rem;
+        }
+    }
+}
